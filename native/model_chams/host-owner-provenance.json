@@ -1,0 +1,19 @@
+{
+  "build": "57566230",
+  "classification": "H: host ownership protocol tested on standalone Android process, NOT installed in game",
+  "fields": {
+    "UObject.flags+0x10": "prior callback ABI2",
+    "UObject.index+0x14": "prior callback ABI2",
+    "UObject.class+0x20": "prior callback ABI2",
+    "actor.primary+0x2e0": "single-target visibility prototype",
+    "controller.camera+0x318": "existing OffsetProfile/controller_camera_manager",
+    "controller.pawn+0x2a0": "earlier callback trial identity guard; not acknowledged-pawn field",
+    "appearance.relative+0x138": "ABI2 identity-relative restore verification",
+    "appearance.flags+0x198": "ABI2 parent bounds bit",
+    "appearance.materials+0x570": "prior callback material TArray",
+    "appearance.num+0x578": "prior callback material TArray",
+    "appearance.capacity+0x57c": "prior callback material TArray"
+  },
+  "runtime_enabled": false,
+  "installer_integrated": false
+}

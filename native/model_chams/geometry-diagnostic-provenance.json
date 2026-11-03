@@ -1,0 +1,37 @@
+{
+  "scope": "diagnostic only; does not prove complete character rendering or primary exclusion",
+  "functions": [
+    {
+      "name": "renderGetter",
+      "rva": "0xde287f8",
+      "bytes": "006440f9c0035fd6",
+      "sha256": "23c8cd26d5ae71e2b941a005fab14d9165cc525ac58267621bb0e69e4a263bb3",
+      "meaning": "asset render-data pointer getter +0xc8",
+      "disassembly": "0DE287F8 ldr      x0, [x0, #0xc8]\n0DE287FC ret      "
+    },
+    {
+      "name": "lodSectionDestruction",
+      "rva": "0xddc30dc",
+      "bytes": "601e40f9614240b9cdf12294601e40f9400000b4b0c9f49760420091f44f41a9",
+      "sha256": "5255b05a3472ac7f2f95c301bdbe0dfcae1cbbf36eee1278a5fb017162217df5",
+      "meaning": "LOD array at +0x38, count +0x40",
+      "disassembly": "0DDC30DC ldr      x0, [x19, #0x38]\n0DDC30E0 ldr      w1, [x19, #0x40]\n0DDC30E4 bl       #0xe67f818\n0DDC30E8 ldr      x0, [x19, #0x38]\n0DDC30EC cbz      x0, #0xddc30f4\n0DDC30F0 bl       #0xdaf57b0\n0DDC30F4 add      x0, x19, #0x10\n0DDC30F8 ldp      x20, x19, [sp, #0x10]"
+    },
+    {
+      "name": "sectionArrayDestruction",
+      "rva": "0xe67f818",
+      "bytes": "e1020034fd7bbea9f44f01a9fd030091f303012a14a00191e00314aa4000009480025df8400000b4dcd7d19780025cf881825cb80f00009480025cf8200100b580025bf8200100b5730600719422049141feff54f44f41a9fd7bc2a8c0035fd6ced7d197f7ffff17ccd7d197f7ffff17",
+      "sha256": "26031fef052a08119933af02d9a305082ed379e0e196afe1df78ac790613d619",
+      "meaning": "section destructor loop advances 0x108",
+      "disassembly": "0E67F818 cbz      w1, #0xe67f874\n0E67F81C stp      x29, x30, [sp, #-0x20]!\n0E67F820 stp      x20, x19, [sp, #0x10]\n0E67F824 mov      x29, sp\n0E67F828 mov      w19, w1\n0E67F82C add      x20, x0, #0x68\n0E67F830 mov      x0, x20\n0E67F834 bl       #0xe67f934\n0E67F838 ldur     x0, [x20, #-0x30]\n0E67F83C cbz      x0, #0xe67f844\n0E67F840 bl       #0xdaf57b0\n0E67F844 ldur     x0, [x20, #-0x40]\n0E67F848 ldur     w1, [x20, #-0x38]\n0E67F84C bl       #0xe67f888\n0E67F850 ldur     x0, [x20, #-0x40]\n0E67F854 cbnz     x0, #0xe67f878\n0E67F858 ldur     x0, [x20, #-0x50]\n0E67F85C cbnz     x0, #0xe67f880\n0E67F860 subs     w19, w19, #1\n0E67F864 add      x20, x20, #0x108\n0E67F868 b.ne     #0xe67f830\n0E67F86C ldp      x20, x19, [sp, #0x10]\n0E67F870 ldp      x29, x30, [sp], #0x20\n0E67F874 ret      \n0E67F878 bl       #0xdaf57b0\n0E67F87C b        #0xe67f858\n0E67F880 bl       #0xdaf57b0\n0E67F884 b        #0xe67f860"
+    },
+    {
+      "name": "positionOwnerDestruction",
+      "rva": "0xddc36dc",
+      "bytes": "fd7bbea9f30b00f9fd030091f30300aa001040f9c87b04f008c12391680200f9800100b5680e40f9",
+      "sha256": "4bdfaa973e1bb43aa58b86189781aa68260084b324a76ba1b2645a2f69274977",
+      "meaning": "CPU owner pointer at buffer +0x20",
+      "disassembly": "0DDC36DC stp      x29, x30, [sp, #-0x20]!\n0DDC36E0 str      x19, [sp, #0x10]\n0DDC36E4 mov      x29, sp\n0DDC36E8 mov      x19, x0\n0DDC36EC ldr      x0, [x0, #0x20]\n0DDC36F0 adrp     x8, #0x16d3e000\n0DDC36F4 add      x8, x8, #0x8f0\n0DDC36F8 str      x8, [x19]\n0DDC36FC cbnz     x0, #0xddc372c\n0DDC3700 ldr      x8, [x19, #0x18]"
+    }
+  ]
+}

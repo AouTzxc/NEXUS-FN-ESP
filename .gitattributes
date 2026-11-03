@@ -1,0 +1,21 @@
+# 行尾与二进制判定：避免 CRLF 把设备端脚本和二进制搞坏。
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.ini text eol=lf
+*.md text eol=lf
+*.c text eol=lf
+*.S text eol=lf
+*.ld text eol=lf
+*.asm text eol=lf
+*.ttf binary
+*.zip binary
+*.a binary
+*.o binary
+*.bin binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.so binary
+*.exe binary

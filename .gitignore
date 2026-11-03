@@ -1,0 +1,24 @@
+# Android NDK 构建输出
+obj/
+libs/
+obj-*/
+libs-*/
+build/
+*.o
+*.a
+
+# tools/embed_font.py 生成，构建时重建，不入库
+jni/src/rebootnova/embedded_font.cpp
+
+# 本地运行与临时文件
+*.log
+*.tmp
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# 发布包按 GitHub Release 资产上传，不进 git 历史
+/REBOOT-ESP*.sh
+/*-source.tar.gz
+/*-source.zip
+/SHA256SUMS.txt

@@ -1,0 +1,28 @@
+{
+  "abi_version": 2,
+  "build": "57566230",
+  "origin": "single-target visibility prototype, not later multi-target experiments",
+  "prototype_sha256": "448aaf7911f3ebefd4e83554fa16916acc8bc7e38df32d87b3b519ece2cd8993",
+  "prior_payload_sha256": "e249a943dfec14073c3b167dca664b585d289314abae7077aadb3dfc8f839891",
+  "evidence": [
+    "visibility-trial.json",
+    "visibility-emulation-results.json",
+    "line-of-sight-base-probe.json"
+  ],
+  "production_manager_integrated": false,
+  "new_process_verified": false,
+  "new_changes": {
+    "restore_ack": "Current source requires material, backup and transform pending masks clear; transient restore errors retried.",
+    "catalog": "New bounded 8-slot/two-Tick-entry protocol; not imported from retired multi experiments.",
+    "transform_scope": "H: finite quaternion originals, bounded Euler conversion, engine-relative reset of all parts before world snapshots, per-part camera projection, equivalent relative/world readback. ARM64 engine mocks only; no live validation.",
+    "classification": "H: new code emulator-verified only; production gate remains false.",
+    "primary_coverage": "Projection still rejects nonempty primary geometry and never projects the pose leader. Tagged material-only plans explicitly include primary geometry; verified in ARM64 engine mocks, not a live game coloring claim.",
+    "default_materials": "Original override Num distinguished from slot count; empty and partial overrides restored, null slots preserved; pending masks survive failed material or transform setters.",
+    "material_only": "ABI2 layout-preserving reserved3 tag 0x434F4C52. Fresh discovery includes primary even outside/without OwnedComponents. Native callback applies/restores materials without world/relative setters or parent-bounds writes. Unknown tags fail closed. Exact current callback code is required; do not mix with prior payloads.",
+    "non_skeletal_components": "MeshComponent ancestry is checked before SkeletalMeshComponent ancestry. Unsupported non-skeletal meshes reject the entire target instead of being omitted. Local palette source filtering is not target coverage."
+  },
+  "verification": [
+    "build/model-chams-callback-tests.json",
+    "build/model-chams-catalog-tests.json"
+  ]
+}

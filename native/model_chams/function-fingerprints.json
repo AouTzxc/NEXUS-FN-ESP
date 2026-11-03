@@ -1,0 +1,83 @@
+{
+  "build": "57566230",
+  "reference_file": "libUnreal.Fortnite-42.10.0-57566230-Android.so",
+  "elf_header_sha256": "e4c86a059bc5dec85b281452dea9469fe43608eb842b8e085ef3155ff0178eeb",
+  "classification": "V: previously recovered functions; requires current process byte validation",
+  "functions": [
+    {
+      "name": "setWorld",
+      "rva": "0xdfc74e4",
+      "bytes": "ff8304d1fd7b0ea9fc5f0fa9f65710a9f44f11a9fd830391f30300aa006440f9f403042af50303aaf603022af70301aa801400b4080040f961d240b9e2031f2a",
+      "sha256": "d2f219c22c776d551eabdfe2b70f621f74c73c7e57dc4c731914f8ec24a1ade2"
+    },
+    {
+      "name": "setRelative",
+      "rva": "0xdfc78b4",
+      "bytes": "ff0301d1fd7b02a9f44f03a9fd830091210840ade80300912008c03df30301aaf40300aa01ad004c0104185e221840fde31340ade1030091e31300ad98040094",
+      "sha256": "c3a90687339d5657e3bbdcd461cf704edc3775c748c2d2f8b260e93b338f292e"
+    },
+    {
+      "name": "setMaterial",
+      "rva": "0xe11c7bc",
+      "bytes": "fd7bbda9f65701a9f44f02a9fd0300914109f837087845b9f40302aaf503012af30300aa16c015911f01016bed090054c80240f9085975f81f0114ebe0070054",
+      "sha256": "7c3a5b47cdf2f6643086d79b0ddb3ba9aba56734aa78f88b4787a80f101eba87"
+    },
+    {
+      "name": "createMid",
+      "rva": "0xe4a6924",
+      "bytes": "ffc301d1fd7b04a9f65705a9f44f06a9fd030191688207903f0000f1f50302aa086d40f9f30300aab5831fb81401819ae00700b4d5070035f5630091f60301aa",
+      "sha256": "afc0fa4bf3fc1d1e9a19bd4c1d80375085191ad0c2972612da3c0a45d44af73f"
+    },
+    {
+      "name": "setVector",
+      "rva": "0xde08a74",
+      "bytes": "ff8301d1eb2b026de923036dfd7b04a9f44f05a9fd030191280040b9a9d08652ca929f5209d6bf722ad3a2722b0840b90901090bf40301aaf30300aa4921c94a",
+      "sha256": "0260b88e4088becd112f746f3f165a266767d3c721f23ff6c650c2ade3d87bb0"
+    },
+    {
+      "name": "markDirty",
+      "rva": "0xe11c234",
+      "bytes": "ffc301d1fd7b01a9fc6f02a9fa6703a9f85f04a9f65705a9f44f06a9fd430091089440b9690080523f01286a81110054f30300aae8004036685640f9081100b5",
+      "sha256": "ff0623d9158136f1d5e2cf08dd9087aa23c5b85b70191e4f771d1371fb259595"
+    },
+    {
+      "name": "lineOfSight",
+      "rva": "0x9003a48",
+      "bytes": "ff0304d1fd7b0da9f6570ea9f44f0fa9fd430391a0073e6da2031ffc010a00b40820601ef30301aaf40300aa610100542820601e210100544820601ee1000054",
+      "sha256": "aa41a88d3a1d40f16810800ebdd85e2f3e2feeea2685b583a3cecaa86983d69a"
+    },
+    {
+      "name": "playerTick",
+      "rva": "0xdd721f8",
+      "bytes": "ffc301d1e80b00fdfdfb01a9fb1700f9fa6703a9f85f04a9f65705a9f44f06a9fd630091081040b968202037080440f9f30300aa082000b4091140b9c91f7837",
+      "sha256": "f7540ee623676a1bc7c27f2be18356f339be830f228f43ad27973dad16ab33b9"
+    },
+    {
+      "name": "getSkinnedAsset",
+      "rva": "0xf509bac",
+      "bytes": "e80300aa00f042f9a00000b448ff069008117939e8000035c0035fd649ff069000f542f92911793989ffff3460ffffb4ff8300d1fd7b01a9fd430091e00700f9",
+      "sha256": "ac88b1c09ed1aa9b287366cb927b69ae9b701e865483146e2ea633b66e5ecc3d",
+      "provenance": "V static: reflected GetSkinnedAsset wrapper 0x8fc9a6c calls this; primary +0x5e0 and fallback +0x5e8. Null both returns null. Must match current process bytes."
+    },
+    {
+      "name": "assetMaterials",
+      "rva": "0xde28d40",
+      "bytes": "00e00591c0035fd601000014ff8301d1fd7b01a9f91300f9f85f03a9f65704a9f44f05a9fd43009115f042f9f30301aaf40300aa57b607b0350c00b4e8127939",
+      "sha256": "8c5a0f5410fca3864d36bd2be195a6d5de3b79a0cac4c01e2c9cfe9455aa2060",
+      "provenance": "V static: component GetNumMaterials 0xe019930 compares asset vtable+0x390 with this getter; getter returns asset+0x178. Current-process byte match mandatory."
+    },
+    {
+      "name": "widgetSpace",
+      "rva": "0x9b82c6c",
+      "bytes": "281040f91f0100f10805889a281000f90880573948000039c0035fd62800805208000039c0035fd6281040f91f0100f10805889a281000f908c4583948000039",
+      "sha256": "6586512a1bb86da365d7158462d83d434d7f8ac70c8968fce54ca6829e75fc19"
+    }
+  ],
+  "component_class_provenance": {
+    "classification": "V static metadata + runtime parent-chain checks",
+    "SkeletalMeshComponent": "0x1954aef0",
+    "SkinnedMeshComponent": "0x1954ac98",
+    "MeshComponent": "0x19522ba8",
+    "evidence": "Reference metadata name pointers at class+0x18 and parent links at class+0x40; runtime checks Skeletal parent Skinned, Skinned parent Mesh. Earlier skeletal class was incorrectly MeshComponent."
+  }
+}

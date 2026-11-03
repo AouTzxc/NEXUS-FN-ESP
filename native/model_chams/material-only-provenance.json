@@ -1,0 +1,31 @@
+{
+  "build": 57566230,
+  "classification": "H: executable callback emulation and standalone Android owner/discovery tests; current-session discovery read-only; no live tint/restore proof",
+  "abi": {
+    "version": 2,
+    "state_size": 1232,
+    "reserved3_offset": 1188,
+    "material_only_tag": "0x434F4C52",
+    "zero_mode": "existing projection remains gated"
+  },
+  "metadata": {
+    "UStruct.depth+0x38": "same reference layout previously used for skeletal hierarchy; live current Mesh/Skeletal depths and direct parent chain checked",
+    "UStruct.superTree+0x30": "same previously verified ancestry representation",
+    "MeshComponent ancestor": "profile::meshClassRva; do not use as a skeletal type marker"
+  },
+  "verification": {
+    "local_source_arm64": 270,
+    "callback_mock_engine": 51,
+    "android_discovery_standalone": 39,
+    "android_owner_standalone": 50,
+    "live_game_material_write": false,
+    "live_game_visual_color": false,
+    "live_game_restore": false
+  },
+  "limitations": [
+    "Only supported skeletal geometry may be planned, maximum four geometry components including primary; other MeshComponents reject whole target.",
+    "No primary camera projection. Material-only is a prerequisite color/restore path, not occlusion visibility.",
+    "Installer/allocation/cache synchronization and FeatureEngine/UI runtime transactions remain absent.",
+    "Current model/asset lifetime changes and full match/GC stability remain unverified."
+  ]
+}

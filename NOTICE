@@ -1,0 +1,19 @@
+NEXUS-FN-ESP 单透视（boxonly）ESP — 第三方与来源声明 / Third-party notices
+
+本仓库源码按 GNU GPL-3.0 发布，见 LICENSE。以下第三方组件保留其上游许可：
+
+- third_party/surface_imgui —— AndroidSurfaceImgui C++17 Enhanced（AFan4724），基于
+  AndroidSurfaceImgui（Bzi-Han）。MIT 许可见 third_party/surface_imgui/LICENSE。
+  该目录内含 upstream Dear ImGui、imstb_rectpack / imstb_textedit / imstb_truetype、
+  stb_image 等上游单头文件组件（MIT / Public Domain）。
+- third_party/surface_imgui/jni/src/ImGui/misc/freetype 与 misc/git_freetype —— ImGui 可选的
+  FreeType 字形加载器源码与预编译库。本工程的 Android.mk 不编译也不链接它们。
+  上游 FreeType 采用 FTL 与 GPL-2.0 双许可。
+- assets/fonts/NotoSansSC-UI-Subset.ttf —— Noto Sans SC（Google），SIL Open Font License 1.1，
+  见 assets/fonts/OFL.txt。tools/subset_font.py 抽取子集，tools/embed_font.py 在构建时把它
+  生成 jni/src/rebootnova/embedded_font.cpp 内嵌进二进制。
+
+偏移与字段溯源写在 profiles/*.ini 的注释里（[V] 已运行验证 / [H] 高置信布局 / [T] 待真机）。
+参考实现只作为证据记录，不复制其代码或凭据。
+
+本项目不是 Epic Games 官方产品，与 Epic Games 无关联、也无背书。
